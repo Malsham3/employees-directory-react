@@ -3,7 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import FormControl from "react-bootstrap/FormControl";
 import List from "../components/List";
 
 class Home extends React.Component {
@@ -17,6 +16,7 @@ class Home extends React.Component {
   }
 
   getAllEmployees = () => {
+
     fetch("https://randomuser.me/api/?results=50&nat=us")
       .then((data) => data.json())
       .then((data) => this.setState({ employees: data.results }));
@@ -29,7 +29,7 @@ class Home extends React.Component {
         <Navbar.Brand href="#home">Employee Directory</Navbar.Brand>
         <Nav className="mr-auto"></Nav>
         <Form inline>
-          <FormControl
+          <Form.Control
             onChange={(e) => this.setState({ search: e.target.value })}
             value={this.state.search}
             type="text"
@@ -38,11 +38,7 @@ class Home extends React.Component {
           <Button variant="outline-light">Search</Button>
         </Form>
       </Navbar>
-      <List
-          list={this.state.employees.filter(({ name }) =>
-            name.firstName.toLowerCase().includes(this.state.search.toLowerCase())
-          )}
-        />
+      <List list = {this.state.employees}/>
       </div>
     );
   }
