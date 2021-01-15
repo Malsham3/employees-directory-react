@@ -1,14 +1,13 @@
 import React from 'react';
-import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
 import Container from './components/Container'
-import EmployeeList from './components/EmployeeList'
+import Home from './components/Home'
 
 
 function App() {
   return (
     <Container>
-    <Navigation />
-    <EmployeeList />
+    <Home />
     </Container>
   );
 }
