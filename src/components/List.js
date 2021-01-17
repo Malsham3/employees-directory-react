@@ -9,7 +9,7 @@ function List({ list, sortbyName }) {
         <tr>
           <th>Photo</th>
           <th>
-            <a onClick={sortbyName}>Full Name</a>
+            <a href = "#" onClick={sortbyName}>Full Name</a>
           </th>
           <th>Email</th>
           <th>Phone</th>
@@ -22,7 +22,7 @@ function List({ list, sortbyName }) {
             <td>
               <img
                 src={picture.large}
-                alt={`${name.first}'s profile picture`}
+                alt= "profile picture"
               />
             </td>
             <td>
