@@ -9,7 +9,7 @@ function List({ list, sortbyName }) {
         <tr>
           <th>Photo</th>
           <th>
-            <a href = "#" onClick={sortbyName}>Full Name</a>
+            <a onClick={sortbyName}>Full Name</a>
           </th>
           <th>Email</th>
           <th>Phone</th>
