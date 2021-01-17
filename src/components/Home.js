@@ -3,13 +3,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import List from "../components/List";
+import List from "./List";
 
 class Home extends React.Component {
   state = {
     employees: [],
-    searched: [],
-    search: ""
+    arr: [],
+    search: "",
+    sort: "",
   };
 
   componentDidMount() {
@@ -21,9 +22,22 @@ class Home extends React.Component {
     await fetch("https://randomuser.me/api/?results=50&nat=us")
       .then((data) => data.json())
       .then((data) => this.setState({ 
-        employees: data.results,
-        searched: data.results
+        employees: data.results
       }));
+  };
+
+  sortbyName = (e) => {
+    //prevents page reload
+    e.preventDefault(); 
+
+    //take in current state
+    let {employees, sort, arr} = this.state;
+
+    //checks if array of employees is sorted, if not sort by name. 
+    (!sort) ? arr = employees.sort((a,b) => a.name.first > b.name.first ? 1: -1) : arr = employees.reverse();
+    
+    //set new state with sorted data
+    this.setState({ employees: arr, sort: !sort})
   };
 
   render() {
@@ -44,9 +58,10 @@ class Home extends React.Component {
         </Form>
       </Navbar>
       <List
-          list = {this.state.searched.filter(({ name }) =>
+          list = {this.state.employees.filter(({ name }) =>
             name.first.toLowerCase().includes(this.state.search.toLowerCase())
           )}
+          sortbyName = {this.sortbyName}
         />
       </div>
     );
