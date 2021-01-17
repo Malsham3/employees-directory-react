@@ -1,7 +1,7 @@
 import React from 'react';
 // import Navigation from "./components/Navigation";
 import Container from './components/Container'
-import Home from './components/Home'
+import Home from './pages/Home'
 
 
 function App() {
