@@ -8,18 +8,22 @@ import List from "../components/List";
 class Home extends React.Component {
   state = {
     employees: [],
-    search: "",
+    searched: [],
+    search: ""
   };
 
   componentDidMount() {
     this.getAllEmployees();
   }
 
-  getAllEmployees = () => {
+  async getAllEmployees() {
 
-    fetch("https://randomuser.me/api/?results=50&nat=us")
+    await fetch("https://randomuser.me/api/?results=50&nat=us")
       .then((data) => data.json())
-      .then((data) => this.setState({ employees: data.results }));
+      .then((data) => this.setState({ 
+        employees: data.results,
+        searched: data.results
+      }));
   };
 
   render() {
@@ -34,11 +38,16 @@ class Home extends React.Component {
             value={this.state.search}
             type="text"
             placeholder="Search"
+            name = "search"
           />
           <Button variant="outline-light">Search</Button>
         </Form>
       </Navbar>
-      <List list = {this.state.employees}/>
+      <List
+          list = {this.state.searched.filter(({ name }) =>
+            name.first.toLowerCase().includes(this.state.search.toLowerCase())
+          )}
+        />
       </div>
     );
   }
