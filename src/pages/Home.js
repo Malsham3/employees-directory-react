@@ -57,6 +57,9 @@ class Home extends React.Component {
           <Button variant="outline-light">Search</Button>
         </Form>
       </Navbar>
+
+
+      
       <List
           list = {this.state.employees.filter(({ name }) =>
             name.first.toLowerCase().includes(this.state.search.toLowerCase())
