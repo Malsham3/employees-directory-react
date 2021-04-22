@@ -1,12 +1,14 @@
-import React from 'react'
-import HomeWrapper from '../components/Home/HomeWrapper'
+import React from "react";
+import Home from "../components/Home/Home";
 
-function NewHome() {
+class NewHome extends React.Component {
+  render() {
     return (
-        <>
-            <HomeWrapper/>
-        </>
-    )
+      <>
+        <Home />
+      </>
+    );
+  }
 }
 
-export default NewHome
+export default NewHome;
