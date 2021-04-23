@@ -3,6 +3,7 @@ import React from 'react';
 import Container from './components/Container'
 import Home from './pages/Home'
 import NewHome from './pages/NewHome'
+import './App.scss'
 
 
 function App() {

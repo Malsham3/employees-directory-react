@@ -6,3 +6,40 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+//--------------------------JUMBOTRON--------------------------//
+#jumbotron{
+  background-color:whitesmoke;
+}
+
+#site-name {
+  font-size: 5.5vw;
+}
+
+#search-field{
+  padding-top: 4vh;
+  padding-right: 1vh;
+  width: 40vw;
+}
+
+#checkbox{
+  width: 15px;
+  height: 15px;
+}
+
+#checkbox-label{
+  padding-top: 1.2vw;
+  padding-left: .50vw;
+  font-size: 1.5vw;
+  color: darkcyan;
+}
+//------------------------END JUMBOTRON------------------------//
+
+//-------------------------- CARDS --------------------------//
+#card-image{
+  margin-top: 1vh;
+  align-self: center;
+  width: 12vw;
+  height: auto;
+}
+//--------------------------END CARDS--------------------------//
