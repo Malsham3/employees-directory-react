@@ -1,10 +1,12 @@
 import React from 'react'
+import EmployeeCard from './EmployeeCard'
+import CardDeck from 'react-bootstrap/CardDeck'
 
 function Cards() {
     return (
-        <div>
-            
-        </div>
+        <CardDeck>
+            <EmployeeCard/>
+        </CardDeck>
     )
 }
 

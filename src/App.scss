@@ -9,11 +9,12 @@
 
 //--------------------------JUMBOTRON--------------------------//
 #jumbotron{
-  background-color:whitesmoke;
+  background-color: rgb(0, 0, 0);
 }
 
 #site-name {
   font-size: 5.5vw;
+  color: white;
 }
 
 #search-field{
@@ -31,11 +32,17 @@
   padding-top: 1.2vw;
   padding-left: .50vw;
   font-size: 1.5vw;
-  color: darkcyan;
+  color: rgb(255, 255, 255);
 }
 //------------------------END JUMBOTRON------------------------//
 
 //-------------------------- CARDS --------------------------//
+#employee-card{
+  margin-bottom: 1vw;
+  max-width: 20vw;
+  min-width: 20vw;
+}
+
 #card-image{
   margin-top: 1vh;
   align-self: center;
