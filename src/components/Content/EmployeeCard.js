@@ -16,7 +16,7 @@ function EmployeeCard({list, sortbyName}) {
         src={picture.large}
         r
       />
-      <Card.Body>
+      <Card.Body id="card-body">
         <Card.Title>{name.first} {name.last}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Software Engineer</Card.Subtitle>
         <Card.Text>
