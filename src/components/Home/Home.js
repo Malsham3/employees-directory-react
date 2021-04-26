@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import Cards from '../Content/Cards'
+import Cards from '../Content/Wrapper'
 import EmployeeCard from '../Content/EmployeeCard'
 
 function Home() {

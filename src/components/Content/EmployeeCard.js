@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-function EmployeeCard() {
+function EmployeeCard({list, sortbyName}) {
   return (
     <>
+    {list.map(({ picture, name, email, phone, location, id }) => (
     <Card 
     id="employee-card" 
     bg='light' 
@@ -12,19 +13,23 @@ function EmployeeCard() {
         id="card-image"
         className="rounded-circle"
         variant="top"
-        src="https://placekitten.com/100/100"
+        src={picture.large}
         r
       />
       <Card.Body>
-        <Card.Title>Name</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Engineer</Card.Subtitle>
+        <Card.Title>{name.first} {name.last}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Software Engineer</Card.Subtitle>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {phone}
+          <br/>
+          {email}
+          <br/>
+          {location.city}, {location.state}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Send an e-mail</Button>
       </Card.Body>
     </Card>
+    ))}
     </>
   );
 }
