@@ -7,8 +7,7 @@ function EmployeeCard({list, sortbyName}) {
     {list.map(({ picture, name, email, phone, location, id }) => (
     <Card 
     id="employee-card" 
-    bg='light' 
-    border="light">
+    bg='light' >
       <Card.Img
         id="card-image"
         className="rounded-circle"
@@ -19,6 +18,7 @@ function EmployeeCard({list, sortbyName}) {
       <Card.Body id="card-body">
         <Card.Title>{name.first} {name.last}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Software Engineer</Card.Subtitle>
+        <br/>
         <Card.Text>
           {phone}
           <br/>

@@ -42,7 +42,7 @@ class Wrapper extends React.Component {
 
   render() {
     return (
-      <CardDeck>
+      <CardDeck id="card-deck">
         <EmployeeCard
           list={this.state.employees.filter(({ name }) =>
             name.first.toLowerCase().includes(this.state.search.toLowerCase())
