@@ -43,21 +43,29 @@
 
 #employee-card{
   margin-bottom: 1vw;
-  max-width: 21.5vw;
+  max-width: 23vw;
   min-width: 19vw;
   border-left-width: 0.3vw;
   border-bottom-width: 0.3vw;
   border-right-style: none;
   border-top-style: none;
   border-color: rgba(44, 111, 187, 0.589);
-  
-  // width: 300px;
 }
 
 #card-image{
   margin-top: 1vh;
   align-self: center;
   width: 12vw;
+  height: auto;
+}
+
+.card-text{
+  font-size: 18px;
+  line-height: 4vh;
+}
+
+#icon{
+  width: 23px;
   height: auto;
 }
 //--------------------------END CARDS--------------------------//

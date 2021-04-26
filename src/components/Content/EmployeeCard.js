@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
 import { Card, Button } from "react-bootstrap";
 
 function EmployeeCard({list, sortbyName}) {
@@ -20,11 +21,11 @@ function EmployeeCard({list, sortbyName}) {
         <Card.Subtitle className="mb-2 text-muted">Software Engineer</Card.Subtitle>
         <br/>
         <Card.Text>
-          {phone}
+          <FaPhone id="icon" />  {phone}
           <br/>
-          {email}
+          <FaEnvelope id="icon" /> {email}
           <br/>
-          {location.city}, {location.state}
+          <FaHome id="icon" /> {location.city}, {location.state}
         </Card.Text>
         <Button variant="primary">Send an e-mail</Button>
       </Card.Body>
