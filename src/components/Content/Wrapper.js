@@ -1,6 +1,7 @@
 import React from "react";
 import EmployeeCard from "./EmployeeCard";
 import CardDeck from "react-bootstrap/CardDeck";
+import Container from "react-bootstrap/Container";
 
 class Wrapper extends React.Component {
   state = {
@@ -42,14 +43,14 @@ class Wrapper extends React.Component {
 
   render() {
     return (
-      <CardDeck id="card-deck">
+      <Container fluid>
         <EmployeeCard
           list={this.state.employees.filter(({ name }) =>
             name.first.toLowerCase().includes(this.state.search.toLowerCase())
           )}
           sortbyName={this.sortbyName}
         />
-      </CardDeck>
+      </Container>
     );
   }
 }

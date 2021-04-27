@@ -6,7 +6,7 @@ function Header() {
     <Jumbotron id="jumbotron">
       <h1 id="site-name"> Employee tracker</h1>
       <Form.Group id="search-field" controlId="exampleForm.ControlInput1">
-        <Form.Control
+        <Form.Control id="place-holder"
           size="lg"
           type="text"
           placeholder="Search your directory"

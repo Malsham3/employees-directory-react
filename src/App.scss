@@ -21,6 +21,11 @@
   padding-top: 4vh;
   padding-right: 1vh;
   width: 40vw;
+  
+}
+
+#place-holder{
+  font-size: 1.5vw;
 }
 
 #checkbox{
@@ -37,35 +42,45 @@
 //------------------------END JUMBOTRON------------------------//
 
 //-------------------------- CARDS --------------------------//
-#card-deck{
-  justify-content:center;
-}
 
 #employee-card{
-  margin-bottom: 1vw;
-  max-width: 23vw;
-  min-width: 19vw;
+  margin: 0.5vw;
+  display:inline-block;
+  margin-bottom: 4.5vh;
+  border-top-style: none;
+  border-right-style: none;
   border-left-width: 0.3vw;
   border-bottom-width: 0.3vw;
-  border-right-style: none;
-  border-top-style: none;
   border-color: rgba(44, 111, 187, 0.589);
 }
 
 #card-image{
-  margin-top: 1vh;
-  align-self: center;
-  width: 12vw;
-  height: auto;
+  width: 40%;
+  margin-top: -25px;
+  margin-left: 1vw;
+}
+
+#card-title{
+  font-size: 1.4rem;
+}
+
+#card-subtitle{
+  font-size: 1rem;
 }
 
 .card-text{
-  font-size: 18px;
-  line-height: 4vh;
+  color:rgb(66, 66, 66);
+  font-size: 1rem;
+  line-height: 4vh; 
+  width: 110%;
 }
 
 #icon{
-  width: 23px;
+  width: 1.3rem;
   height: auto;
+}
+
+#random-btn{
+  width: 55%
 }
 //--------------------------END CARDS--------------------------//
