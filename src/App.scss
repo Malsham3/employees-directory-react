@@ -9,34 +9,39 @@
 
 //--------------------------JUMBOTRON--------------------------//
 #jumbotron{
-  background-color: rgb(0, 0, 0);
+  // background-image: url("../img/jumbotron_bg.jpg");
+  // background-size: cover;
+  background-color: rgba(13, 58, 109, 0.808);
+  padding-left: 3vw;
 }
 
 #site-name {
-  font-size: 5.5vw;
+  font-size: 5.2vw;
+  font-weight: bold;
   color: white;
 }
 
 #search-field{
   padding-top: 4vh;
   padding-right: 1vh;
-  width: 40vw;
+  width: 18rem;
   
 }
 
 #place-holder{
-  font-size: 1.5vw;
+  font-size: 1.2rem;
 }
 
-#checkbox{
-  width: 15px;
-  height: 15px;
-}
+// #checkbox{
+//   width: 15px;
+//   height: 15px;
+// }
 
 #checkbox-label{
+  width: 45%;
   padding-top: 1.2vw;
   padding-left: .50vw;
-  font-size: 1.5vw;
+  // font-size: 1.4rem;
   color: rgb(255, 255, 255);
 }
 //------------------------END JUMBOTRON------------------------//

@@ -1,13 +1,13 @@
 import React from "react";
 import { Jumbotron, Form } from "react-bootstrap";
 
-function Header() {
+function Header({sortbyName }) {
   return (
-    <Jumbotron id="jumbotron">
+    <Jumbotron id="jumbotron" fluid>
       <h1 id="site-name"> Employee tracker</h1>
       <Form.Group id="search-field" controlId="exampleForm.ControlInput1">
         <Form.Control id="place-holder"
-          size="lg"
+          size="md"
           type="text"
           placeholder="Search your directory"
         />

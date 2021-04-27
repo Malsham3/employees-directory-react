@@ -1,15 +1,14 @@
 import React from 'react';
-// import Navigation from "./components/Navigation";
 import Container from './components/Container'
+import Foo from './pages/Foo'
 import Home from './pages/Home'
-import NewHome from './pages/NewHome'
 import './App.scss'
 
 
 function App() {
   return (
     // <Home/>
-    <NewHome />
+    <Home />
   );
 }
 
