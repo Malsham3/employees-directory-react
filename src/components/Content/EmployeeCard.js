@@ -29,7 +29,7 @@ function EmployeeCard({ list, sortbyName }) {
               <br />
               <FaHome id="icon" /> {location.city}, {location.state}
             </Card.Text>
-            <Button href={"mailto:"+email} id="random-btn" variant="primary">Send an e-mail</Button>
+            {/* <Button href={"mailto:"+email} id="random-btn" variant="primary">Send an e-mail</Button> */}
           </Card.Body>
         </Card>
       ))}

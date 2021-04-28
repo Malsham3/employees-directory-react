@@ -26,8 +26,8 @@ class NewHome extends React.Component {
   }
 
   sortbyName = (e) => {
-    //prevents page reload
-    e.preventDefault();
+    //prevents propagation of the same event from being called.
+    e.stopPropagation();
 
     //take in current state
     let { employees, sort, arr } = this.state;

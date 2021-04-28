@@ -8,7 +8,7 @@
 }
 
 //--------------------------JUMBOTRON--------------------------//
-#jumbotron{
+#jumbotron {
   // background-image: url("../img/jumbotron_bg.jpg");
   // background-size: cover;
   background-color: rgba(13, 58, 109, 0.808);
@@ -21,36 +21,27 @@
   color: white;
 }
 
-#search-field{
+#search-field {
   padding-top: 4vh;
   padding-right: 1vh;
-  width: 18rem;
-  
+  height: auto;
+  max-width: 45vw;
 }
 
-#place-holder{
-  font-size: 1.2rem;
+#place-holder {
+  font-size: 2vw;
 }
-
-// #checkbox{
-//   width: 15px;
-//   height: 15px;
-// }
-
-#checkbox-label{
-  width: 45%;
-  padding-top: 1.2vw;
-  padding-left: .50vw;
-  // font-size: 1.4rem;
-  color: rgb(255, 255, 255);
+.form-inline{
+  margin-left: 1vw;
+  color: white;
 }
 //------------------------END JUMBOTRON------------------------//
 
 //-------------------------- CARDS --------------------------//
 
-#employee-card{
+#employee-card {
   margin: 0.5vw;
-  display:inline-block;
+  display: inline-block;
   margin-bottom: 4.5vh;
   border-top-style: none;
   border-right-style: none;
@@ -59,33 +50,33 @@
   border-color: rgba(44, 111, 187, 0.589);
 }
 
-#card-image{
+#card-image {
   width: 40%;
   margin-top: -25px;
   margin-left: 1vw;
 }
 
-#card-title{
+#card-title {
   font-size: 1.4rem;
 }
 
-#card-subtitle{
+#card-subtitle {
   font-size: 1rem;
 }
 
-.card-text{
-  color:rgb(66, 66, 66);
+.card-text {
+  color: rgb(66, 66, 66);
   font-size: 1rem;
-  line-height: 4vh; 
+  line-height: 2em;
   width: 110%;
 }
 
-#icon{
+#icon {
   width: 1.3rem;
   height: auto;
 }
 
-#random-btn{
-  width: 55%
+#random-btn {
+  width: 55%;
 }
 //--------------------------END CARDS--------------------------//
