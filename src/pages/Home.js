@@ -15,6 +15,10 @@ class NewHome extends React.Component {
     this.getAllEmployees();
   }
 
+  handleSort = (e) => {
+    this.setState({ search: e.target.value })
+  }
+
   async getAllEmployees() {
     await fetch("https://randomuser.me/api/?results=12&nat=us")
       .then((data) => data.json())
@@ -44,7 +48,7 @@ class NewHome extends React.Component {
   render() {
     return (
       <>
-      <Header sortbyName={this.sortbyName}/>
+      <Header handleSort={this.handleSort} sortbyName={this.sortbyName}/>
       <Container fluid>
         <EmployeeCard
           list={this.state.employees.filter(({ name }) =>
