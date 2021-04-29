@@ -1,7 +1,7 @@
 # Employee tracker with React
 
 ## Demo
-![employees-tracker-react](https://user-images.githubusercontent.com/73148818/115514006-864d1900-a238-11eb-9c3b-bae89457f9e0.gif)
+![employees-directory-react](https://user-images.githubusercontent.com/73148818/116511516-67bfd100-a87b-11eb-8952-9ad6340f5a89.gif)
 
 ## Project description
 The goal of this project is to create a web application to help management access their employees information. 

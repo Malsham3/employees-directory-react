@@ -2,10 +2,10 @@ import React from "react";
 import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
 import { Card, Button } from "react-bootstrap";
 
-function EmployeeCard({ list, sortbyName }) {
+function EmployeeCard({ list }) {
   return (
     <>
-      {list.map(({ picture, name, email, phone, location, id }) => (
+      {list.map(({ picture, name, email, phone, location }) => (
         <Card id="employee-card" bg="light" style={{ width: '18rem' }}>
           <Card.Img
             id="card-image"
@@ -25,7 +25,8 @@ function EmployeeCard({ list, sortbyName }) {
             <Card.Text>
               <FaPhone id="icon" /> {phone}
               <br />
-              <FaEnvelope id="icon" /> {email}
+              <FaEnvelope id="icon"/>{" "}
+              <a id="email" href={"mailto:"+{email}}>{email}</a> 
               <br />
               <FaHome id="icon" /> {location.city}, {location.state}
             </Card.Text>
