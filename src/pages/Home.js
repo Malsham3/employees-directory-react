@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Header from '../components/Header/Header'
-import EmployeeCard from '../components/Content/EmployeeCard'
+import { Container } from "react-bootstrap";
+import Header from "../components/Header/Header";
+import EmployeeCard from "../components/Content/EmployeeCard";
 
 class NewHome extends React.Component {
   state = {
@@ -16,11 +16,11 @@ class NewHome extends React.Component {
   }
 
   handleSort = (e) => {
-    this.setState({ search: e.target.value })
-  }
+    this.setState({ search: e.target.value });
+  };
 
   async getAllEmployees() {
-    await fetch("https://randomuser.me/api/?results=12&nat=us")
+    await fetch("https://randomuser.me/api/?results=24&nat=us")
       .then((data) => data.json())
       .then((data) =>
         this.setState({
@@ -48,14 +48,14 @@ class NewHome extends React.Component {
   render() {
     return (
       <>
-      <Header handleSort={this.handleSort} sortbyName={this.sortbyName}/>
-      <Container fluid>
-        <EmployeeCard
-          list={this.state.employees.filter(({ name }) =>
-            name.first.toLowerCase().includes(this.state.search.toLowerCase())
-          )}
-        />
-      </Container>
+        <Header handleSort={this.handleSort} sortbyName={this.sortbyName} />
+        <Container fluid>
+          <EmployeeCard
+            list={this.state.employees.filter(({ name }) =>
+              name.first.toLowerCase().includes(this.state.search.toLowerCase())
+            )}
+          />
+        </Container>
       </>
     );
   }

@@ -9,7 +9,6 @@ function Header({ handleSort, sortbyName }) {
       <Form.Group id="search-field" controlId="exampleForm.ControlInput1">
         <Form.Control
         onChange= {handleSort}
-        // value={this.state.search}
           id="place-holder"
           size="md"
           type="text"
