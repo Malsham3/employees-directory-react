@@ -16,9 +16,23 @@
 }
 
 #site-name {
+  color: mix(#fff, #1e76e9, 85%);
   font-size: 5.2vw;
   font-weight: bold;
-  color: white;
+  text-shadow: -0.0075em 0.0075em 0 mix(#fff, #1e76e9, 94%),
+    0.005em 0.005em 0 mix(#fff, #1e76e9, 60%),
+    0.01em 0.01em 0 mix(#fff, #1e76e9, 62%),
+    0.015em 0.015em mix(#fff, #1e76e9, 64%),
+    0.02em 0.02em 0 mix(#fff, #1e76e9, 66%),
+    0.025em 0.025em 0 mix(#fff, #1e76e9, 68%),
+    0.03em 0.03em 0 mix(#fff, #1e76e9, 70%),
+    0.035em 0.035em 0 mix(#fff, #1e76e9, 72%);
+}
+
+#test1212{
+  background-color: white;
+  font-size: 1.6vw;
+  width: 9em;
 }
 
 #search-field {
@@ -29,9 +43,9 @@
 }
 
 #place-holder {
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
-.form-inline{
+.form-inline {
   margin-left: 1vw;
   color: white;
 }
@@ -71,7 +85,7 @@
   width: 120%;
 }
 
-#email{
+#email {
   color: rgb(66, 66, 66);
 }
 
