@@ -1,18 +1,17 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function EmployeeCard({ list }) {
   return (
     <>
-      {list.map(({ picture, name, email, phone, location }) => (
-        <Card id="employee-card" bg="light" style={{ width: '18rem' }}>
+      {list.map(({ picture, name, email, phone, location, id }) => (
+        <Card key={id.value} id="employee-card" bg="light" style={{ width: '18rem' }}>
           <Card.Img
             id="card-image"
             className="rounded-circle"
             variant="top"
             src={picture.large}
-            r
           />
           <Card.Body id="card-body">
             <Card.Title id="card-title">

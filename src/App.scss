@@ -15,9 +15,13 @@
   padding-left: 3vw;
 }
 
+// @import url('https://fonts.googleapis.com/css?family=Paytone');
+
 #site-name {
   color: mix(#fff, #1e76e9, 85%);
-  font-size: 5.2vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4.2vw;
+  letter-spacing: 0.3vw;
   font-weight: bold;
   text-shadow: -0.0075em 0.0075em 0 mix(#fff, #1e76e9, 94%),
     0.005em 0.005em 0 mix(#fff, #1e76e9, 60%),
