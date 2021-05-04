@@ -28,7 +28,7 @@ The technologies used for this project are:
 
 ## Links
 - [GitHub Repository](https://github.com/Malsham3/employees-tracker-react)
-- [Deployed Application](https://mostafaalshammary.netlify.app)
+- [Deployed Application](https://trackemployeeswithreact.netlify.app)
 
 ## Questions / Contributions
 Email me at m.alsham627@gmail.com
